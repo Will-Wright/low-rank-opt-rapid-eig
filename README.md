@@ -23,7 +23,7 @@ The following experiments offer a brief demonstration of noisy phase retrieval.
 
 
 
-### Mini demo
+### Quick demo comparing original `saga_sd` with `adaptive_eigs_params` method
 
 `experiments.figure.noisyimage_adaptive_eig_demo`
 
