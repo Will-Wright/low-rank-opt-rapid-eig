@@ -35,7 +35,7 @@ The following experiments offer a brief demonstration of noisy phase retrieval.
 `experiments.figure.noisyimage_adaptive_eig_full_exp`
 
 <p align="center">
-<img scr="saga_sd-vs-rapid-eig.png">
+<img src="saga_sd-vs-rapid-eig.png">
 </p>
 
 
