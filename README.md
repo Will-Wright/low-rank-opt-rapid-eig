@@ -34,7 +34,9 @@ The following experiments offer a brief demonstration of noisy phase retrieval.
 
 `experiments.figure.noisyimage_adaptive_eig_full_exp`
 
-
+<p align="center">
+<img scr="saga_sd-vs-rapid-eig.png">
+</p>
 
 
 ### Shows saga_sd beats wflow
@@ -44,10 +46,6 @@ The following experiments offer a brief demonstration of noisy phase retrieval.
 <p align="center">
 <img src="saga_sd-vs-wflow.png">
 </p>
-<p align="center">
-Original image
-</p>
-
 
 
 
