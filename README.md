@@ -23,21 +23,22 @@ The following experiments demonstrate the effectiveness of the `saga_sd` algorit
 
 ### Comparison of `saga_sd` and `saga_sd rapid-eig`
 
-* `experiments.figure.noisyimage_adaptive_eig_full_exp`: runs a series of experiments (with results cached in the current repository) demonstrating the efficiency of `saga_sd rapid-eig` for a variety of phase retrieval problems. Generates the following results (along with many other plots).
+* `experiments.figure.noisyimage_adaptive_eig_full_exp`: runs a series of experiments (with results cached in this repository) demonstrating the efficiency of `saga_sd rapid-eig` for a variety of phase retrieval problems. Generates the following results (along with many other plots).
 
-
+This plot demonstrates that `saga_sd rapid-eig` (red dashed line) is more efficient than `saga_sd` (blue solid line) for a variety of random phase retrieval problems with varying size (left), oversampling rate (middle), and noise ratio (right).
 
 <p align="center">
 <img src="Numerics-ada_vs_orig_various_params.png">
 </p>
-Shows `saga_sd rapid-eig` (red dashed line) is more efficient than `saga_sd` (blue solid line) for a variety of random phase retrieval problems with varying size (left), oversampling rate (middle), and noise ratio (right).
+
+
+Shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best parameter (number of requested eigenvalues in the MATLAB function 
+[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html) for each iterate of the sequence of eigenvalue problems.  See chapters 6 and 7 of the dissertation [A rapid eigenvalue method for noisy phase retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
 
 
 <p align="center">
 <img src="saga_sd-vs-rapid-eig.png">
 </p>
-Shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best parameter (number of requested eigenvalues in the MATLAB function 
-[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html) for each iterate of the sequence of eigenvalue problems.  See chapters 6 and 7 of the dissertation [A rapid eigenvalue method for noisy phase retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
 
 
 Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a small set of experiments and results.
