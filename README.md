@@ -34,6 +34,16 @@ The following experiments offer a brief demonstration of noisy phase retrieval.
 
 `experiments.figure.noisyimage_adaptive_eig_full_exp`
 
+BETTER THAN ORIG
+
+<p align="center">
+<img src="Numerics-ada_vs_orig_various_params.png">
+</p>
+
+
+
+ALMOST OPTIMAL
+
 <p align="center">
 <img src="saga_sd-vs-rapid-eig.png">
 </p>
