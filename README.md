@@ -41,7 +41,14 @@ The following experiments offer a brief demonstration of noisy phase retrieval.
 
 `experiments.table.noisyrandom_saga_vs_wflow_rel_errs`
 
-saga_sd-vs-wflow.png
+<p align="center">
+<img src="saga_sd-vs-wflow.png">
+</p>
+<p align="center">
+Original image
+</p>
+
+
 
 
 
