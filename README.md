@@ -11,7 +11,7 @@ Our software package uses the same main algorithm (`saga_sd.m`) and helper funct
 
 **Contributions**
 
-This fork optimizes the original package for handling noisy phase retrieval problems.  The original algorithm is very effective for noiseless models, but has difficulty handling noisy models.  The modifications focus on two goals:
+This fork optimizes the original `saga_sd` algorithm for handling noisy phase retrieval problems.  The original algorithm is very effective for noiseless models, but has difficulty handling noisy models.  The modifications focus on two goals:
    1. providing an optimal method for solving the eigenvalue subproblem in the main routine, and
    2. using reliable termination conditions to terminate when the algorithm stagnates.
 
@@ -19,34 +19,29 @@ This fork optimizes the original package for handling noisy phase retrieval prob
 Demo Tutorials
 --------------
 
-The following experiments offer a brief demonstration of noisy phase retrieval.  
+The following experiments demonstrate the effectiveness of the `saga_sd` algorithm for phase retrieval and the efficiency of the new `adaptive_eigs_params` algorithm (which we call `saga_sd rapid-eig`) for solving the sequence of eigenvalue problems in `saga_sd`.
+
+### Comparison of `saga_sd` and `saga_sd rapid-eig`
+
+* `experiments.figure.noisyimage_adaptive_eig_full_exp`: runs a series of experiments (with results cached in the current repository) demonstrating the efficiency of `saga_sd rapid-eig` for a variety of phase retrieval problems. Generates the following results (along with many other plots).
 
 
-
-### Quick demo comparing original `saga_sd` with `adaptive_eigs_params` method
-
-`experiments.figure.noisyimage_adaptive_eig_demo`
-
-
-
-
-### Full exp demo
-
-`experiments.figure.noisyimage_adaptive_eig_full_exp`
-
-BETTER THAN ORIG
 
 <p align="center">
 <img src="Numerics-ada_vs_orig_various_params.png">
 </p>
+Shows `saga_sd rapid-eig` (red dashed line) is more efficient than `saga_sd` (blue solid line) for a variety of random phase retrieval problems with varying size (left), oversampling rate (middle), and noise ratio (right).
 
-
-
-ALMOST OPTIMAL
 
 <p align="center">
 <img src="saga_sd-vs-rapid-eig.png">
 </p>
+Shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best parameter (number of requested eigenvalues in the MATLAB function 
+[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html) for each iterate of the sequence of eigenvalue problems.  See chapters 6 and 7 of the dissertation [A rapid eigenvalue method for noisy phase retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
+
+
+Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a small set of experiments and results.
+
 
 
 ### Shows saga_sd beats wflow
