@@ -32,8 +32,8 @@ This plot demonstrates that `saga_sd rapid-eig` (red dashed line) is more effici
 </p>
 
 
-Shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best parameter (number of requested eigenvalues in the MATLAB function 
-[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html) for each iterate of the sequence of eigenvalue problems.  See chapters 6 and 7 of the dissertation [A rapid eigenvalue method for noisy phase retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
+This table shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best parameter (number of requested eigenvalues `r` in the MATLAB function 
+[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html)) for each iterate in the sequence of eigenvalue problems.  Note that `m` refers to the block-size in `eigs`, `L` is the phase retrieval oversampling rate, and `epsilon_rel` is the noise ratio.  See chapters 6 and 7 of the dissertation [A rapid eigenvalue method for noisy phase retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
 
 
 <p align="center">
@@ -41,30 +41,22 @@ Shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best p
 </p>
 
 
-Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a small set of experiments and results.
+Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a smaller set of experiments and results.
 
 
 
-### Shows saga_sd beats wflow
+### Comparison of `saga_sd` and [`wflow`](https://arxiv.org/abs/1407.1065) for noisy phase retrieval
 
-`experiments.table.noisyrandom_saga_vs_wflow_rel_errs`
+* `experiments.table.noisyrandom_saga_vs_wflow_rel_errs`: demonstrates `saga_sd` is generally more likely to recover an accurate signal than the competitor `wflow` algorithm for noisy phase retrieval problems.
 
 <p align="center">
 <img src="saga_sd-vs-wflow.png">
 </p>
 
 
-
-
-
-### Other exp
-
-This experiment solves two noisy image recovery problems (at 10% and 30% noise to signal) and displays figures from various iterates, demonstrating that this optimization method makes significant progress in 20 iterations. 
-   - original: `experiments.figure.noisyimage_signal_relerr_various_saga_iterates`, which plots the following figure
-
+* `experiments.figure.noisyimage_signal_relerr_various_saga_iterates`: solves two noisy image recovery problems (at 10% and 30% noise to signal) and displays figures from various iterates, demonstrating that this optimization method makes significant progress in 20 iterations. 
+ 
 ![denoised_images](/cache/noisy_image_parrot_iterates_and_x_rel_err.png)
-
-   - quicker options: `experiments.figure.noisyimage_signal_relerr_various_saga_iterates('image_file', 'data/parrot_4k.jpg', 'run_default_experiment', false, 'iterations', 20, 'iterates_to_view', [1, 3, 21]);`
 
 
 
