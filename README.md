@@ -88,7 +88,7 @@ All contents of this package are functionally equivalent to the original `low-ra
 * `./+cdp`: functions to generate Coded Diffraction Patterns for phase-recovery experiments
 
 * `./+experiments`: functions to reproduce experiments
-   * **Mod**: `/+exputil`, `/+figure`, `/+table`, and `/+test` subdirectories to generate numerical results in corresponding [disseration](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf).
+   * **Mod**: `/+exputil`, `/+figure`, `/+table`, and `/+test` subdirectories to generate numerical results in corresponding [dissertation](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf).
 
 * `./+hop`: linear operators for phase recovery (`pl.m`) and blind deconvolution (`bd.m`)
 
