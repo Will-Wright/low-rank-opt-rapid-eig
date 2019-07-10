@@ -30,7 +30,7 @@ This plot demonstrates that `saga_sd rapid-eig` (red dashed line) is more effici
 
 
 This table shows `saga_sd rapid-eig` is nearly optimal in the sense of selecting the best parameter (number of requested eigenvalues `r` in the MATLAB function 
-[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html)) for each iterate in the sequence of eigenvalue problems.  Note that `m` refers to the block-size in `eigs`, `L` is the phase retrieval oversampling rate, and `epsilon_rel` is the noise ratio.  See chapters 6 and 7 of the dissertation [A rapid eigenvalue method for noisy phase retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
+[eigs](https://www.mathworks.com/help/matlab/ref/eigs.html)) for each iterate in the sequence of eigenvalue problems.  Note that `m` refers to the block-size in `eigs`, `L` is the phase retrieval oversampling rate, and `epsilon_rel` is the noise ratio.  See chapters 6 and 7 of the dissertation [A Rapid Eigenvalue Method for Noisy Phase Retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) for details.
 
 
 <p align="center">
@@ -51,7 +51,7 @@ Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a s
 </p>
 
 
-* `experiments.figure.noisyimage_signal_relerr_various_saga_iterates`: solves two noisy image recovery problems (at 10% and 30% noise ratio) and displays figures from various iterates, demonstrating that `saga_sd` makes significant progress in 20 iterations. 
+* `experiments.figure.noisyimage_signal_relerr_various_saga_iterates`: solves two noisy image recovery problems (with noise ratios 10% and 30%) and displays figures from various iterates, demonstrating that `saga_sd` makes significant progress in 20 iterations. 
  
 ![denoised_images](/cache/noisy_image_parrot_iterates_and_x_rel_err.png)
 
