@@ -4,9 +4,7 @@ Description
 
 This software package accompanies the dissertation [A Rapid Eigenvalue Method for Noisy Phase Retrieval](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf) and solves large-scale phase retrieval and blind deconvolution problems by framing them as low-rank semidefinite programs. 
 
-This package is a modification of the original package [low-rank-opt](https://www.cs.ubc.ca/~mpf/pubs/low-rank-spectral-optimization-via-gauge-duality/) ([mirror](https://github.com/Will-Wright/low-rank-opt-orig)) by Michael Friedlander.  The method is based on the paper [Low-rank spectral optimization via gauge duality](https://arxiv.org/abs/1508.00315) by Michael Friedlander and Ives Macedo.  
-
-Our software package uses the same main algorithm (`saga_sd.m`) and helper functions as the original `low-rank-opt` package.  Our modifications are summarized below and detailed in the **Contents** section.
+This package is a modification of the original package [low-rank-opt](https://www.cs.ubc.ca/~mpf/pubs/low-rank-spectral-optimization-via-gauge-duality/) ([mirror](https://github.com/Will-Wright/low-rank-opt-orig)) by Michael Friedlander.  The main phase retrieval algorithm `saga_sd` is based on the paper [Low-rank spectral optimization via gauge duality](https://arxiv.org/abs/1508.00315) by Michael Friedlander and Ives Macedo.  Our modifications are summarized below and detailed in the **Contents** section.
 
 ### New Contributions:
 
