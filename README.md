@@ -10,7 +10,7 @@ Our software package uses the same main algorithm (`saga_sd.m`) and helper funct
 
 ### New Contributions:
 
-This fork optimizes the original `saga_sd` algorithm for handling noisy phase retrieval problems.  The original algorithm is very effective for noiseless models, but has difficulty handling noisy models.  The modifications focus on two goals:
+This fork offers a new method for handling the sequence of eigenvalue problems in `saga_sd` which is the computational bottleneck of the `saga_sd` algorithm for noisy phase retrieval problems.  The original algorithm is very effective for noiseless models, but has difficulty handling noisy models.  The modifications focus on two goals:
    1. providing an optimal method for solving the eigenvalue subproblem in the main routine, and
    2. using reliable termination conditions to terminate when the algorithm stagnates.
 
