@@ -9,7 +9,7 @@ Note that this package is a modification of the original package [low-rank-opt](
 ### New Contributions:
 
 This fork offers a new method for handling the sequence of eigenvalue problems in `saga_sd` which is the computational bottleneck of the `saga_sd` algorithm for noisy phase retrieval problems.  The original algorithm is very effective for noiseless models, but has difficulty handling noisy models.  Our modifications offer two primary improvements to `saga_sd`:
-   1. implementing an optimal method for solving the eigenvalue subproblem in the main routine, and
+   1. implementing an optimal method (`adaptive_eigs_params`) for solving the eigenvalue subproblem in the main routine, and
    2. establishing reliable termination conditions to terminate when the algorithm stagnates.
 
 
