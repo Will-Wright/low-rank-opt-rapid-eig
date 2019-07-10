@@ -18,7 +18,7 @@ This fork offers a new method for handling the sequence of eigenvalue problems i
 Demo Tutorials
 --------------
 
-The following experiments demonstrate the effectiveness of the `saga_sd` algorithm for phase retrieval and the efficiency of the new `adaptive_eigs_params` algorithm (which we call `saga_sd rapid-eig`) for solving the sequence of eigenvalue problems in `saga_sd`.
+The following experiments demonstrate the efficiency of the new `adaptive_eigs_params` algorithm (which we call `saga_sd rapid-eig`) for solving the sequence of eigenvalue problems in `saga_sd`.  We also show the effectiveness of the `saga_sd` algorithm for noisy phase retrieval.
 
 ### Comparison of `saga_sd` and `saga_sd rapid-eig`
 
@@ -53,7 +53,7 @@ Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a s
 </p>
 
 
-* `experiments.figure.noisyimage_signal_relerr_various_saga_iterates`: solves two noisy image recovery problems (at 10% and 30% noise to signal) and displays figures from various iterates, demonstrating that this optimization method makes significant progress in 20 iterations. 
+* `experiments.figure.noisyimage_signal_relerr_various_saga_iterates`: solves two noisy image recovery problems (at 10% and 30% noise ratio) and displays figures from various iterates, demonstrating that `saga_sd` makes significant progress in 20 iterations. 
  
 ![denoised_images](/cache/noisy_image_parrot_iterates_and_x_rel_err.png)
 
@@ -62,7 +62,7 @@ Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a s
 Contents
 --------
 
-All contents of this package are functionally identical to the original `low-rank-opt` unless otherwise noted as **new** or **modified**.
+All contents of this package are functionally equivalent to the original `low-rank-opt` unless otherwise noted as **new** or **mod**.
 
 * `./setpath.m`: script to add dependencies to the path. *Run this first.*
 
@@ -71,6 +71,8 @@ All contents of this package are functionally identical to the original `low-ran
    * **Mod**: new termination conditions for noisy phase retrieval to identify stagnation
    * **Mod**: decreasing steplength strategy to replace linesearch when objective function is nondifferentiable
    * **Mod**: other minor alterations which do not affect internal behavior (see solver internal comments for details)
+
+* **New** `./adaptive_eigs_params.m`: adaptive parameter selection method for using `eigs` to solve eigenvalue problems efficiently in `saga_sd`.  See plot and table above for numerical results.
 
 * `./project.m`: projection onto the dual gauge constraint
    * **Mod**: projection onto constraint set for prototyping l1-PhaseLift method
@@ -86,7 +88,7 @@ All contents of this package are functionally identical to the original `low-ran
 * `./+cdp`: functions to generate Coded Diffraction Patterns for phase-recovery experiments
 
 * `./+experiments`: functions to reproduce experiments
-   * **Mod**: `/+exputil`, `/+figure`, `/+table`, and `/+test` subdirectories to demonstrate behavior of `saga_sd.m` for noisy phase retrieval
+   * **Mod**: `/+exputil`, `/+figure`, `/+table`, and `/+test` subdirectories to generate numerical results in corresponding [disseration](https://github.com/Will-Wright/dissertation-rapid_eigenvalue_method_for_noisy_phase_retrieval/blob/master/will_wright_dissertation.pdf).
 
 * `./+hop`: linear operators for phase recovery (`pl.m`) and blind deconvolution (`bd.m`)
 
