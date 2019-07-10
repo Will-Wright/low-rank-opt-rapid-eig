@@ -1,7 +1,6 @@
 Description
 -----------
 
-**Summary**
 
 This software package solves large-scale phase retrieval and blind deconvolution problems by framing them as low-rank semidefinite programs. 
 
@@ -9,7 +8,7 @@ This package is a modification of the original package [low-rank-opt](https://ww
 
 Our software package uses the same main algorithm (`saga_sd.m`) and helper functions as the original `low-rank-opt` package.  Our modifications are summarized below and detailed in the **Contents** section.
 
-**Contributions**
+### New Contributions:
 
 This fork optimizes the original `saga_sd` algorithm for handling noisy phase retrieval problems.  The original algorithm is very effective for noiseless models, but has difficulty handling noisy models.  The modifications focus on two goals:
    1. providing an optimal method for solving the eigenvalue subproblem in the main routine, and
