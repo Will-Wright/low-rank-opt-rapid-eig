@@ -46,7 +46,10 @@ xxx
 
 ### Adaptive parameter selection method based on grid search results
 
-* `experiments.figure.noisyimage_adaptive_eig_full_exp`: plots surfaces (including the one below) which demonstrate that the optimal `number of eigenvalues` parameter for `eigs` changes (top plot) as the algebraically largest eigenvalues cluster (bottom plot).  These insights lead to the development of the `adaptive_eigs_params` algorithm.
+* `experiments.figure.noisyimage_adaptive_eig_full_exp`: plots surfaces which demonstrate the difference in computational costs (`Number mat-vec` products) for various iterates in the phase retrieval algorithm `saga_sd` and various choice of parameter `Number eigenvalues requested`. 
+The top plot shows that the optimal `Number eigenvalues requested` parameter for `eigs` changes, and generally increase for later iterates.
+The bottom plot shows that this change in optimal `Number eigenvalues requested` coincides with a clustering of the algebraically largest eigenvalues.
+Computing clustered eigenvalues is known to be difficult and these insights led to the development of the `adaptive_eigs_params` algorithm.
 
 
 <p align="center">
