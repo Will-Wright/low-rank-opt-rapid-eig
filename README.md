@@ -46,7 +46,7 @@ xxx
 
 ### Adaptive parameter selection method based on grid search results
 
-* `experiments.figure.noisyimage_adaptive_eig_full_exp`: plots 
+* `experiments.figure.noisyimage_adaptive_eig_full_exp`: plots surfaces (including the one below) which demonstrate that the optimal `number of eigenvalues` parameter for `eigs` changes (top plot) as the algebraically largest eigenvalues cluster (bottom plot).  These insights lead to the development of the `adaptive_eigs_params` algorithm.
 
 
 <p align="center">
