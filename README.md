@@ -42,6 +42,20 @@ Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a s
 
 
 
+xxx
+
+### Adaptive parameter selection method based on grid search results
+
+* `experiments.figure.noisyimage_adaptive_eig_full_exp`: plots 
+
+
+<p align="center">
+<img src="Numerics-surf_num_mvs_and_eig_diffs_2.png">
+</p>
+
+
+
+
 ### Comparison of `saga_sd` and [`wflow`](https://arxiv.org/abs/1407.1065) for noisy phase retrieval
 
 * `experiments.table.noisyrandom_saga_vs_wflow_rel_errs`: demonstrates `saga_sd` is generally more likely to recover an accurate signal than the competitor `wflow` algorithm for noisy phase retrieval problems.
