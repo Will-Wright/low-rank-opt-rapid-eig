@@ -26,6 +26,7 @@ This plot demonstrates that `saga_sd rapid-eig` (red dashed line) is more effici
 
 <p align="center">
 <img src="Numerics-ada_vs_orig_various_params.png">
+<br>
 hi
 </p>
 
