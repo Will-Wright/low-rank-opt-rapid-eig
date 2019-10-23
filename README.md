@@ -27,7 +27,7 @@ This plot demonstrates that `saga_sd rapid-eig` (red dashed line) is more effici
 <p align="center">
 <img src="Numerics-ada_vs_orig_various_params.png">
 <br>Number of matrix-vector products for various problems.
-<br>Note that a matrix-vector product has the primary cost of `2L` FFTs, where `L` is the oversampling rate.
+<br>Note that a matrix-vector product has the primary cost of 2L FFTs, where L is the oversampling rate.
 </p>
 
 
