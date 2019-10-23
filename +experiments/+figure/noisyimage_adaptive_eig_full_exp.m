@@ -24,20 +24,20 @@ lin_interp_weights = ones(num_lin_interp_pts,1);
 print_num_mat_vecs = true;
 print_num_mat_vecs_in_TeX_mode = false;
 
-plot_2_figs_num_mvs_adaptive_various_blocksize = true;
+plot_2_figs_num_mvs_adaptive_various_blocksize = false;
 
 print_table_opt_vs_ada_block_size_40 = true;
 print_opt_vs_ada_in_TeX_mode = false;
 
-plot_num_eigs = true;
+plot_num_eigs = false;
 
-plot_mat_vec_orig_vs_opt_surf = true;
+plot_mat_vec_orig_vs_opt_surf = false;
 
 plot_num_eigs_ada_vs_orig = true;
 
-plot_mat_vec_and_eig_diff_surf = true;
+plot_mat_vec_and_eig_diff_surf = false;
 
-plot_mat_vec_for_blocksize_vs_num_eigs_surf = true;
+plot_mat_vec_for_blocksize_vs_num_eigs_surf = false;
 
 
 
@@ -411,7 +411,7 @@ if plot_num_eigs_ada_vs_orig
 
    plot(data.eigs.ada_params{L_idx, noise_ratio_idx,block_size_idx}.num_eigs(iter_start:iter_end), 'r*')
    plot(data.eigs.opt_params{L_idx, noise_ratio_idx,block_size_idx}.num_eigs(iter_start:iter_end), 'bo')
-   legend('Algorithm 8', 'Optimal params')
+   legend('IGDD algorithm', 'Optimal params')
 
    title_str = strcat("L = ", num2str(L), ", noise ratio = ", num2str(noise_ratio));
    title(title_str)
@@ -434,7 +434,7 @@ if plot_num_eigs_ada_vs_orig
 
    plot(data.eigs.ada_params{L_idx, noise_ratio_idx,block_size_idx}.num_eigs(iter_start:iter_end), 'r*')
    plot(data.eigs.opt_params{L_idx, noise_ratio_idx,block_size_idx}.num_eigs(iter_start:iter_end), 'bo')
-   legend('Algorithm 8', 'Optimal params')
+   legend('IGDD algorithm', 'Optimal params')
 
    title_str = strcat("L = ", num2str(L), ", noise ratio = ", num2str(noise_ratio));
    title(title_str)
@@ -592,7 +592,7 @@ if plot_mat_vec_orig_vs_opt_surf
 
    plot(1:num_EMEP_iters, mv_orig, '*');
    plot(1:num_EMEP_iters, mv_opt, '+');
-   legend('Original params', 'Optimal params')
+   legend('Original params (GDD algorithm)', 'Optimal params')
    xlim([1, num_EMEP_iters])
 
    title_str = strcat("L = ", num2str(L), ", noise ratio = ", num2str(noise_ratio));

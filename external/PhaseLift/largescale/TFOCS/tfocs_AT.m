@@ -10,8 +10,6 @@ function [ x, out, opts ] = tfocs_AT(smoothF,projectorF,pars,x0,opts)
 alg = 'AT';
 algorithm = 'Auslender & Teboulle''s single-projection method';
 alpha = 0; beta = 0; mu = 0; % Do not remove: necessary because of a MATLAB quirk
-nArg = nargin;
-nOut = nargout;
 
 Pattern = pars{1};
 lambda = pars{2};

@@ -42,7 +42,6 @@ Note: you may also run `experiments.figure.noisyimage_adaptive_eig_demo` for a s
 
 
 
-xxx
 
 ### Adaptive parameter selection method based on grid search results
 
@@ -54,6 +53,7 @@ Computing clustered eigenvalues is known to be difficult and these insights led 
 
 <p align="center">
 <img src="Numerics-surf_num_mvs_and_eig_diffs_2.png">
+hi
 </p>
 
 
