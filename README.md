@@ -26,6 +26,7 @@ This plot demonstrates that `saga_sd rapid-eig` (red dashed line) is more effici
 
 <p align="center">
 <img src="Numerics-ada_vs_orig_various_params.png">
+hi
 </p>
 
 
@@ -53,7 +54,6 @@ Computing clustered eigenvalues is known to be difficult and these insights led 
 
 <p align="center">
 <img src="Numerics-surf_num_mvs_and_eig_diffs_2.png">
-hi
 </p>
 
 
